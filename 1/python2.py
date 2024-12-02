@@ -22,4 +22,4 @@ for item in left_side:
     match_score = match_score + right_side.count(item) * item
 print(match_score)
 
-# 22 Lines of code
+# 16 Lines of code
