@@ -80,3 +80,5 @@ for report in reports:
         total_safe = total_safe + 1
 
 print(total_safe)
+
+# 53 Lines of code
