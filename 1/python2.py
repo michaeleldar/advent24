@@ -15,10 +15,6 @@ def split_lists(file):
     
     return left_side, right_side
 
-# Look for matches for a certain number
-def find_matches(number, right_side):
-    return right_side.count(number) * number
-
 # Main Program
 left_side, right_side = split_lists(input_file)
 match_score = 0
