@@ -31,3 +31,5 @@ left_side = sorted(right_side)
 right_side = sorted(right_side)
 total_gap = find_side_gap(left_side, right_side)
 print(total_gap)
+
+# 21 Lines of code

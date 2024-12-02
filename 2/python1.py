@@ -1,4 +1,4 @@
-input_file = open("/Users/michael/repos/advent24/2/input.txt").read()
+input_file = open("input.txt").read()
 
 
 # Splits file into lists of reports with sublists for levels

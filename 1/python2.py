@@ -29,3 +29,5 @@ match_score = 0
 for item in left_side:
     match_score = match_score + find_matches(item, right_side)
 print(match_score)
+
+# 22 Lines of code
