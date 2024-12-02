@@ -17,17 +17,13 @@ def split_lists(file):
 
 # Look for matches for a certain number
 def find_matches(number, right_side):
-    match_score = 0
-    for item in right_side:
-        if item == number:
-            match_score = match_score + number
-    return match_score
+    return right_side.count(number) * number
 
 # Main Program
 left_side, right_side = split_lists(input_file)
 match_score = 0
 for item in left_side:
-    match_score = match_score + find_matches(item, right_side)
+    match_score = match_score + right_side.count(item) * item
 print(match_score)
 
 # 22 Lines of code
