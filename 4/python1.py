@@ -63,11 +63,8 @@ def get_matches(coordinates, processed_file):
             matches += 1
     
     if not x > 136 and not y > 136:
-        try:
-            if processed_file[x+1][y+1] == "M" and processed_file[x+2][y+2] == "A" and processed_file[x+3][y+3] == "S":
+        if processed_file[x+1][y+1] == "M" and processed_file[x+2][y+2] == "A" and processed_file[x+3][y+3] == "S":
                 matches += 1
-        except:
-            print(x, y)
 
     if not y > 136:
         if processed_file[x][y+1] == "M" and processed_file[x][y+2] == "A" and processed_file[x][y+3] == "S":
