@@ -1,4 +1,4 @@
-input_file = open("/Users/michael/repos/advent24/4/input copy.txt").read()
+input_file = open("/Users/michael/repos/advent24/4/input.txt").read()
 
 
 def organise(file):
@@ -74,6 +74,12 @@ def get_matches(coordinates, processed_file):
     else:
         return 0
     
+    if processed_file[x-1][y-1] == processed_file[x+1][y+1]:
+        return 0
+    
+    if processed_file[x-1][y+1] == processed_file[x+1][y-1]:
+        return 0
+
     if amount_of_S > 2 or amount_of_M > 2:
         return 0
     else:
