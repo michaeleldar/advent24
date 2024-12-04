@@ -1,6 +1,6 @@
 import re
 
-input_file = open("/Users/michael/repos/advent24/3/input.txt").read()
+input_file = open("input.txt").read()
 
 
 # Searches for multiplay functions in the code
